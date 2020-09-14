@@ -1,10 +1,5 @@
 import sys
-from argparse import ArgumentParser
 
-# parser = ArgumentParser()
-# parser.add_argument("-i","--include",dest="include")
-# args = parser.parse_args()
-#print(args)
 def main(argv):
     if len(argv) == 0:
         argv = ['3','5','7','11','13','17']
