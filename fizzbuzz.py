@@ -1,4 +1,11 @@
-for i in range(300):
+print("Enter max number")
+max = input()
+
+while max.isnumeric() == False:
+    print("Please enter a numeric value for max number")
+    max = input()
+
+for i in range(int(max)):
     myString = ""
     if i % 3 == 0:
         myString = myString + "-Fizz"
