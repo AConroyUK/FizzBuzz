@@ -5,7 +5,7 @@ while max.isnumeric() == False:
     print("Please enter a numeric value for max number")
     max = input()
 
-for i in range(int(max)):
+for i in range(1,int(max)+1):
     myString = ""
     if i % 3 == 0:
         myString = myString + "-Fizz"
@@ -21,8 +21,6 @@ for i in range(int(max)):
             myString = myString + "-Fezz"
         else:
             myString = myString[:index-1] + "-Fezz" + myString[index-1:]
-    # if i % 17 == 0:
-    #     myString.split(" ")
 
     myList = myString.split("-")
     if i % 17 == 0:
@@ -33,5 +31,5 @@ for i in range(int(max)):
 
     if myString == "":
         myString = i
-    #myString = str(i) + ": " + myString
+
     print(myString)
